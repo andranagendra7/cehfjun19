@@ -1,0 +1,175 @@
+    1  ping google.com
+    2  mkdir chef
+    3  cd chef/
+    4  yum install wget -y
+    5  wget https://packages.chef.io/files/stable/chefdk/1.4.3/el/7/chefdk-1.4.3-1.el7.x86_64.rpm
+    6  ls
+    7  rpm -vih chefdk-1.4.3-1.el7.x86_64.rpm 
+    8  cp /home/ec2-user/chef-starter.zip .
+    9  ls
+   10  tar -xvfz chef-starter.zip 
+   11  tar -xvf chef-starter.zip 
+   12  tar -xf chef-starter.zip 
+   13  ls
+   14  tar xf chef-starter.zip 
+   15  chmod 700 chef-starter.zip 
+   16  tar xf chef-starter.zip 
+   17  yum install tar -y
+   18  unzip chef-starter.zip 
+   19  ls
+   20  cd chef-repo/
+   21  ls
+   22  knife client list
+   23  knife node list
+   24  knife cookbook  list
+   25  cd ..
+   26  cp /home/ec2-user/python.pem .
+   27  knife bootstrap 52.23.229.61 --sudo -x ec2-user -i python.pem -N node1
+   28  pwd
+   29  cd chef-repo/
+   30  knife bootstrap 52.23.229.61 --sudo -x ec2-user -i /root/cehf/python.pem -N node1
+   31  chmod +x /root/chef/python.pem 
+   32  knife bootstrap 52.23.229.61 --sudo -x ec2-user -i /root/cehf/python.pem -N node1
+   33  sudo ec2-user
+   34  exit
+   35  knife bootstrap 52.23.229.61 --sudo -x ec2-user -i /root/chef/python.pem -N node1
+   36  cd chef/
+   37  cd chef-repo/
+   38  knife bootstrap 52.23.229.61 --sudo -x ec2-user -i /root/chef/python.pem -N node1
+   39  cd cookbooks/
+   40  knife cookbook create pythondev
+   41  ls
+   42  cd pythondev/
+   43  ls
+   44  cd recipes/
+   45  vi default.rb 
+   46  knife cookbook test pythondev
+   47  vi default.rb 
+   48  knife cookbook test pythondev
+   49  knife cookbook upload pythondev
+   50  cd 
+   51  cd chef/
+   52  yum install -y giit
+   53  yum install -y git-all
+   54  git init
+   55  yum update -y
+   56  hostname workstation
+   57  sudo -i
+   58  pwd
+   59  su ec2-user
+   60  history
+   61  history | cat >> chefcommnds
+   62  cat chefcommnds 
+   63  git remote add chef https://github.com/andranagendra7/cehfjun19.git
+   64  cls
+   65  ls
+   66  mv chefcommnds chef/.
+   67  cd chef/
+   68  git remote add chef https://github.com/andranagendra7/cehfjun19.git
+   69  git pull https://github.com/andranagendra7/cehfjun19.git
+   70  git pull chef master --allow-unrelated-histories
+   71  ls
+   72  mv python.pem /root/.
+   73  git add .
+   74  git commit -m "delete on file"
+   75  git push chef master
+   76  cd chef-repo/
+   77  cd ..
+   78  mkdir ruby
+   79  cd ruby/
+   80  vi first.rb
+   81  chef-apply first.rb 
+   82  ls /root/
+   83  vi first.rb
+   84  chef-apply first.rb 
+   85  git init
+   86  git reomoete add chefrb https://github.com/andranagendra7/cehfjun19.git
+   87  git reomote add chefrb https://github.com/andranagendra7/cehfjun19.git
+   88  git remote add chefrb https://github.com/andranagendra7/cehfjun19.git
+   89  git pull https://github.com/andranagendra7/cehfjun19.git
+   90  ls
+   91  git push chefrb master
+   92  git add .
+   93  git commit -m "rub file adding"
+   94  git push chefrb master
+   95  cp first.rb test.rb
+   96  vi test.rb 
+   97  cp test.rb test2.rb
+   98  vi test2.rb 
+   99  touch /root/sample
+  100  chef-apply test2.rb 
+  101  vi sample.rb
+  102  chef-apply sample.rb.rb 
+  103  chef-apply sample.rb 
+  104  git commit -am "3 new files added"
+  105  git commit -a -m "3 new files added"
+  106  git commit -A -m "3 new files added"
+  107  git add .
+  108  git commit  -m "3 new files added"
+  109  git config --global user.mail "andranagendra720@gmail.com"
+  110  git config --global user.name "andranagendra7"
+  111  vi package.rb
+  112  chef-apply package.rb 
+  113  vi package.rb
+  114  chef-apply package.rb 
+  115  vi package.rb
+  116  chef-apply package.rb 
+  117  vi service.rb
+  118  chef-apply service.rb 
+  119  vi service.rb 
+  120  chef-apply service.rb 
+  121  vi service.rb 
+  122  chef-apply service.rb 
+  123  vi service.rb 
+  124  chef-apply service.rb 
+  125  vi service.rb 
+  126  chef-apply service.rb 
+  127  vi service.rb 
+  128  chef-apply service.rb 
+  129  vi service.rb 
+  130  chef-apply service.rb 
+  131  ca | ls 
+  132  cat | ls 
+  133  git commit -m "new file creted"
+  134  git add .
+  135  git commit -m "new file creted"
+  136  git push chefrb master
+  137  chef -v
+  138  yum install git -y
+  139  cd
+  140  lpwd
+  141  ls;wd
+  142  ls;pwd
+  143  ls -a;pwd
+  144  cd chef/
+  145  git init
+  146  git status
+  147  git add / chef-repo/
+  148  git add chef-repo/
+  149  git status
+  150  git add chef-st
+  151  git add chef-starter.zip 
+  152  git add chefdk-1.4.3-1.el7.x86_64.rpm 
+  153  git add .
+  154  git status
+  155  git commit -m "add chef-files"
+  156  git log
+  157  git remote
+  158  cd chef-repo/
+  159  ls -a
+  160  cd .chef/
+  161  ls
+  162  cat nag9991.pem 
+  163  cat knife.rb 
+  164  knife client list
+  165  knife role list
+  166  knife node list
+  167  knife cookbook list
+  168  uname -a
+  169  uname -m
+  170  uname -r
+  171  uname -n
+  172  cat /etc/redhat-release
+  173  cat /etc/os-release
+  174  history
+  175  history | cat >>chefday2practice
