@@ -23,4 +23,11 @@ service "httpd" do
 action [:enable, :start]
 
 end
+file "/var/www/html/index.html" do
 
+action :create
+content "<html><body><h1>'welcome chef-node topic'</h1></body></html>"
+end
+directory "/root/flask" do
+action :create
+end
